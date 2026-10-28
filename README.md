@@ -70,14 +70,14 @@ print_stderr = "deny"
 ### 3. Shell Script (interactive)
 
 ```bash
-curl -sL https://raw.githubusercontent.com/vicnaum/rust-magic-linter/master/scripts/install.sh | bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/vicnaum/rust-magic-linter/master/scripts/install.sh)"
 ```
 
 Or specify a preset directly:
 
 ```bash
 # Options: minimal, standard, maximum
-curl -sL https://raw.githubusercontent.com/vicnaum/rust-magic-linter/master/scripts/install.sh | bash -s -- standard
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/vicnaum/rust-magic-linter/master/scripts/install.sh)" -- standard
 ```
 
 ---
